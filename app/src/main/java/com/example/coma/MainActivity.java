@@ -8,7 +8,7 @@ import android.util.Log;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
+    private static int SPLASH_TIME_OUT = 5000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
