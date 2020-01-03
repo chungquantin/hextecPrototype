@@ -20,7 +20,7 @@ public class InputActivity extends AppCompatActivity {
         configureConfirmButton();
     }
     private void configureBackButton(){
-        Button backButton = (Button)findViewById(R.id.backButton);
+        Button backButton = findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -29,9 +29,9 @@ public class InputActivity extends AppCompatActivity {
         });
     }
     private void configureConfirmButton(){
-        Button confirmButton = (Button)findViewById(R.id.confirmButton);
-        final EditText nameInput = (EditText)findViewById(R.id.nameInput);
-        final EditText ageInput = (EditText)findViewById(R.id.ageInput);
+        Button confirmButton = findViewById(R.id.confirmButton);
+        final EditText nameInput = findViewById(R.id.nameInput);
+        final EditText ageInput = findViewById(R.id.ageInput);
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
