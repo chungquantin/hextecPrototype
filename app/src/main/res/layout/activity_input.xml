@@ -33,15 +33,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
+        android:drawableLeft="@mipmap/ic_launcher"
         android:ems="10"
         android:hint="Name"
-        android:drawableLeft="@mipmap/ic_launcher"
         android:inputType="textPersonName"
         android:textAlignment="viewStart"
         android:textColor="#00FF90"
+        android:textColorHint="#E91E63"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ageInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:textAlignment="viewStart"
+        android:textColor="#00FF90"
+        android:textColorHint="#E91E63"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

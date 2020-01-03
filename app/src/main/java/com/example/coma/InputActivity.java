@@ -31,11 +31,13 @@ public class InputActivity extends AppCompatActivity {
     private void configureConfirmButton(){
         Button confirmButton = (Button)findViewById(R.id.confirmButton);
         final EditText nameInput = (EditText)findViewById(R.id.nameInput);
+        final EditText ageInput = (EditText)findViewById(R.id.ageInput);
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String name=nameInput.getText().toString();
-                Toast.makeText(InputActivity.this,name,Toast.LENGTH_SHORT).show();
+                String age = ageInput.getText().toString();
+                Toast.makeText(InputActivity.this,name+": "+age,Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(InputActivity.this,WhiteNoise.class));
             }
         });
