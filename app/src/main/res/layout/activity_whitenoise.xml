@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/whitenoisebackground"
+    android:background="@drawable/wnsbg"
     android:orientation="vertical"
-    tools:context=".whitenoise">
+    tools:context=".WhiteNoise">
 
 
     <Button
@@ -16,7 +16,7 @@
         android:layout_gravity="left"
         android:layout_marginLeft="35dp"
         android:layout_marginTop="135dp"
-        android:background="#00ff0000"
+        android:background="@drawable/sleeplogo"
         android:baselineAligned="false" />
 
     <Button

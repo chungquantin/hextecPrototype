@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class whitenoise extends AppCompatActivity {
+public class WhiteNoise extends AppCompatActivity {
 
     Button btn_s1;
 
@@ -21,7 +21,7 @@ public class whitenoise extends AppCompatActivity {
         btn_s1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(whitenoise.this, wnsound1.class);
+                Intent intent = new Intent(WhiteNoise.this, WhiteNoise1.class);
                 startActivity(intent);
             }
         });

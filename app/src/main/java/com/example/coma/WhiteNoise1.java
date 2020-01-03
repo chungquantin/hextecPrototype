@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class wnsound1 extends AppCompatActivity {
+public class WhiteNoise1 extends AppCompatActivity {
 
     Button btn_ps1;
     Button btn_ss1;
@@ -27,7 +27,7 @@ public class wnsound1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wnsound1);
+        setContentView(R.layout.activity_whitenoise1);
 
         btn_ps1 = findViewById(R.id.btn_ps1);
         btn_ss1 = findViewById(R.id.btn_ss1);
@@ -35,11 +35,10 @@ public class wnsound1 extends AppCompatActivity {
 
         btn_ps1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                mediaPlayer = MediaPlayer.create(wnsound1.this, R.raw.sound1);
-                mediaPlayer.start();
-            }
-        });
+            public void onClick(View v){
+                mediaPlayer = MediaPlayer.create(WhiteNoise1.this, R.raw.sound1);
+                mediaPlayer.start(); }}
+        );
 
         btn_ss1.setOnClickListener(new View.OnClickListener() {
             @Override

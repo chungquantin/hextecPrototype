@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/wnsbg"
-    tools:context=".wnsound1">
+    tools:context=".WhiteNoise1">
 
     <Button
         android:id="@+id/btn_ps1"

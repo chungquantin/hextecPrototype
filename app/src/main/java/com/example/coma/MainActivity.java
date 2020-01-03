@@ -19,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        welcomeText = (TextView) findViewById(R.id.welcomeText);
+        welcomeText = findViewById(R.id.welcomeText);
         configureStartButton();
     }
     private void configureStartButton(){
-        startButton = (Button) findViewById(R.id.startButton);
+        startButton = findViewById(R.id.startButton);
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){

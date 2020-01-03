@@ -2,6 +2,7 @@ package com.example.coma;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -35,6 +36,7 @@ public class InputActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String name=nameInput.getText().toString();
                 Toast.makeText(InputActivity.this,name,Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(InputActivity.this,WhiteNoise.class));
             }
         });
     }
