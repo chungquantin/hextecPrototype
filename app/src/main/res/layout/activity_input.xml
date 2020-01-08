@@ -72,6 +72,7 @@
         app:layout_constraintTop_toBottomOf="@+id/nameInput" />
 
     <RadioGroup
+        android:id="@+id/genderRadioGroup"
         android:layout_width="373dp"
         android:layout_height="179dp"
         app:layout_constraintBottom_toTopOf="@+id/confirmButton"
@@ -80,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/male"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Male"
@@ -88,19 +89,19 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/female"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Gender"
+            android:text="Female"
             android:textColor="#9F00FFD9"
             android:textSize="20sp"
 />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/otherGender"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Gender"
+            android:text="Other"
             android:textColor="#9F00FFD9"
             android:textSize="20sp" />
     </RadioGroup>
