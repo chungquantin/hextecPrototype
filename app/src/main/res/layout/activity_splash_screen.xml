@@ -33,10 +33,10 @@
         android:id="@+id/tips"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="120dp"
         android:fontFamily="@font/montserrat"
-        android:text="Loading..."
+        android:text="Tip"
         android:textColor="#9F00FFD9"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,13 +46,23 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="144dp"
         android:fontFamily="@font/montserrat"
         android:text="Loading..."
         android:textColor="#9F00FFD9"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="110dp"
+        android:layout_height="89dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/coma" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

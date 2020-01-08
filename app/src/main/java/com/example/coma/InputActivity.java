@@ -38,7 +38,7 @@ public class InputActivity extends AppCompatActivity {
                 String name=nameInput.getText().toString();
                 String age = ageInput.getText().toString();
                 Toast.makeText(InputActivity.this,name+": "+age,Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(InputActivity.this,WhiteNoise.class));
+                /*startActivity(new Intent(InputActivity.this,.class));*/
             }
         });
     }

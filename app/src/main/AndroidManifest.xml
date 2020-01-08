@@ -17,7 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".InputActivity" />
-        <activity android:name=".WhiteNoise1" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
