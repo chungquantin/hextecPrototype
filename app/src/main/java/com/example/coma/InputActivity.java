@@ -82,7 +82,7 @@ public class InputActivity extends AppCompatActivity {
                 String age = ageInput.getText().toString();
                 if(!name.isEmpty() && !age.isEmpty() && !gender.isEmpty()) {
                     Toast.makeText(InputActivity.this, name + ": " + age +" - " + gender, Toast.LENGTH_SHORT).show();
-                    //startActivity(new Intent(InputActivity.this, TabActivity.class));
+                    startActivity(new Intent(InputActivity.this, FunctionSelection.class));
                 }
                 else{
                     Toast.makeText(InputActivity.this, "Please fill in your information!", Toast.LENGTH_SHORT).show();
