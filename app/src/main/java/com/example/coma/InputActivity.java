@@ -19,7 +19,7 @@ import android.widget.Toast;
 public class InputActivity extends AppCompatActivity {
 
     EditText nameInput,ageInput;
-    Button backButton,confirmButton;
+    Button confirmButton;
     RadioGroup genderRadioGroup;
     RadioButton male,female,other;
     String gender ="";
@@ -28,7 +28,6 @@ public class InputActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input);
-        configureBackButton();
         configureConfirmButton();
         configureGenderRadiogroup();
     }
@@ -62,15 +61,6 @@ public class InputActivity extends AppCompatActivity {
             }
         });
     }
-    private void configureBackButton(){
-        backButton = findViewById(R.id.backButton);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
-    }
     private void configureConfirmButton(){
         confirmButton = findViewById(R.id.confirmButton);
         nameInput = findViewById(R.id.nameInput);
@@ -82,10 +72,10 @@ public class InputActivity extends AppCompatActivity {
                 String age = ageInput.getText().toString();
                 if(!name.isEmpty() && !age.isEmpty() && !gender.isEmpty()) {
                     Toast.makeText(InputActivity.this, name + ": " + age +" - " + gender, Toast.LENGTH_SHORT).show();
-                    /*Intent intent = new Intent(InputActivity.this,FunctionSelection.class);
+                    Intent intent = new Intent(InputActivity.this,FunctionSelection.class);
                     intent.putExtra("name",name);
-                    startActivity(intent);*/
-                    startActivity(new Intent(InputActivity.this,FunctionSelection.class));
+                    startActivity(intent);
+//                    startActivity(new Intent(InputActivity.this,FunctionSelection.class));
                 }
                 else{
                     Toast.makeText(InputActivity.this, "Please fill in your information!", Toast.LENGTH_SHORT).show();

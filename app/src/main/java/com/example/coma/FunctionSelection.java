@@ -36,8 +36,8 @@ public class FunctionSelection extends AppCompatActivity {
         whiteNoiseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*Intent intent = new Intent(FunctionSelection.this,WhiteNoise.class);
-                startActivity(intent);*/
+                Intent intent = new Intent(FunctionSelection.this,WhiteNoise.class);
+                startActivity(intent);
             }
         });
 
