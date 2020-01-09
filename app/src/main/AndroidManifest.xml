@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--<activity android:name=".FunctionSelection"></activity>
+        <activity android:name=".FunctionSelection"></activity>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,8 +24,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>-->
-        <activity android:name=".MainActivity"></activity>
+        </activity>
+        <!--<activity android:name=".MainActivity"></activity>
         <activity android:name=".InputActivity" />
         <activity android:name=".FunctionSelection">
             <intent-filter>
@@ -33,7 +33,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>-->
     </application>
 
 </manifest>
