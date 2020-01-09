@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.coma">
 
-    <!--<application
+<!--    <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SleepRecommendation"></activity>
         <activity android:name=".FunctionSelection" />
+        <activity android:name=".SleepTimer"/>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,6 +36,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SleepRecommendation"></activity>
+        <activity android:name=".SleepTimer"/>
         <activity android:name=".FunctionSelection">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,5 +45,6 @@
             </intent-filter>
         </activity>
     </application>
+
 
 </manifest>
